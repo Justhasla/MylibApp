@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/creepster"
+        android:text="My LIb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imglogo" />
+
+    <Button
+        android:id="@+id/btnAllbooks"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Show All"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/txtv1"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="@+id/txtv1"
+        app:layout_constraintTop_toBottomOf="@+id/txtv1" />
+
+    <Button
+        android:id="@+id/btnCurent"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Current read"
+        app:layout_constraintEnd_toEndOf="@+id/btnAllbooks"
+        app:layout_constraintStart_toStartOf="@+id/btnAllbooks"
+        app:layout_constraintTop_toBottomOf="@+id/btnAllbooks" />
+
+    <Button
+        android:id="@+id/btnAlready"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Read"
+        app:layout_constraintEnd_toEndOf="@+id/btnCurent"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toStartOf="@+id/btnCurent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCurent" />
+
+    <Button
+        android:id="@+id/btnwant"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="readlist"
+        app:layout_constraintEnd_toEndOf="@+id/btnAlready"
+        app:layout_constraintStart_toStartOf="@+id/btnAlready"
+        app:layout_constraintTop_toBottomOf="@+id/btnAlready" />
+
+    <Button
+        android:id="@+id/btnFav"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Favrit"
+        app:layout_constraintEnd_toEndOf="@+id/btnwant"
+        app:layout_constraintStart_toStartOf="@+id/btnwant"
+        app:layout_constraintTop_toBottomOf="@+id/btnwant" />
+
+    <TextView
+        android:id="@+id/txtLicence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="DEv by Cruhcrew"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imglogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/btnAbout"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="About"
+        app:layout_constraintEnd_toEndOf="@+id/btnFav"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnFav"
+        app:layout_constraintTop_toBottomOf="@+id/btnFav" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
